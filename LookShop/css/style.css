@@ -441,7 +441,7 @@ html {
           justify-content: space-between;
 }
 
-.subheader .customCare {
+.subheader .custom-care {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,8 +451,12 @@ html {
   height: 30px;
 }
 
-.subheader .customCare__text {
+.subheader .custom-care__text {
   margin-right: 8px;
+}
+
+.subheader .custom-care__value {
+  color: #ffffff;
 }
 
 .subheader .account {
@@ -2156,12 +2160,16 @@ html {
     padding: 0;
   }
 
-  .subheader .customCare {
+  .subheader .custom-care {
     height: 3.2em;
     background-color: #fafafa;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .subheader .custom-care__value {
+    color: #838383;
   }
 
   .subheader .account {
