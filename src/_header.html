@@ -1,0 +1,71 @@
+<header class="header">
+  @@include('_subheader.html', {})
+  <div class="header__container _container">
+    <div class="header__block">
+      <a href="#" class="header__logo">
+        <img src="../img/logo.png" alt="logo" />
+      </a>
+      <nav>
+        <ul class="header__nav">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">new</a>
+            <span class="arrowDown _icon-arrowDown"></span>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">designers</a>
+            <span class="arrowDown _icon-arrowDown"></span>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">women</a>
+            <span class="arrowDown _icon-arrowDown"></span>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">men</a>
+            <span class="arrowDown _icon-arrowDown"></span>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">clearance</a>
+            <span class="arrowDown _icon-arrowDown"></span>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__cart">
+        <div class="cart__select">
+          <div class="select-dropdown">Your cart</div>
+          <span class="arrowDown _icon-arrowDown"></span>
+        </div>
+        <div class="cart__counters">
+          <div class="counters-img">
+            <svg width="25" height="25" viewBox="0 0 259 252">
+              <path fill="#b3b3b3" d="M29.99,69L0,252L258.99,252L228.99,69Z" />
+              <path
+                stroke="#ffffff"
+                fill="none"
+                stroke-width="12.62"
+                d="M159.42,118.47C147.08,118.47 136.13,124.37 129.17,133.48C122.21,124.37 111.26,118.47 98.92,118.47C77.87,118.47 60.81,135.54 60.81,156.58C60.81,177.63 77.87,194.69 98.92,194.69C111.26,194.69 122.21,188.79 129.17,179.69C136.13,188.79 147.08,194.69 159.42,194.69C180.47,194.69 197.53,177.63 197.53,156.58C197.53,135.54 180.47,118.47 159.42,118.47Z"
+              />
+              <path
+                stroke="#b3b3b3"
+                fill="none"
+                stroke-width="12"
+                d="M177.25,77L177.25,54.08C177.25,27.52 155.73,6 129.17,6C102.62,6 81.09,27.52 81.09,54.08L81.09,77"
+              />
+            </svg>
+          </div>
+          <div class="counters-count">0 items</div>
+          <span>|</span>
+          <div class="counters-price">$ 0</div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-text">menu</div>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  @@include('_slider.html', {})
+</header>

@@ -1,0 +1,156 @@
+.swiper-header 
+    height: 480px
+    position: relative
+    @media ( max-width: $md2+px )
+        height: 380px
+    @media ( max-width: $md3+px )
+        display: none
+.swiper-header__wrapper
+    height: 440px
+    @media ( max-width: $md2+px )
+        height: 350px
+.slide1
+    background: no-repeat center/100% url(../img/bgMain.jpg)
+    background-size: cover
+
+.slide2
+    background: no-repeat left top/50% url(../img/man1.jpg)
+    .slide-wrapper
+        margin-left: auto
+
+.slide-wrapper
+    width: 26em
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100%
+    text-align: center
+    padding: 5% 0
+.subtitle 
+    position: relative
+    font-family: LuxuryRoyaleJF
+    line-height: 1.2
+    font-size: 36px
+    font-weight: 400
+    color: #78645d
+    margin-top: 4%
+    +linePrev
+    +lineNext
+    @media ( max-width: $md1+px )
+        +adaptiv-font(36, 26.7, 2)
+    @media ( max-width: $md2+px )
+        +adaptiv-font(26.7, 18, 0)
+  
+.title 
+    position: relative
+    font-family: HelveticaNeueLTStdHvCn
+    font-size: 96.1px
+    line-height: 72px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: -0.025em
+    color: #78645d
+    margin-bottom: 10px
+    +LineFat
+    @media ( max-width: $md1+px )
+        +adaptiv-font(96.1, 71.1, 2)
+    @media ( max-width: $md2+px )
+        +adaptiv-font(71.1, 60, 0)
+        line-height: 53px
+
+.mainTitle 
+    position: relative
+    font-family: HelveticaNeueLTStdLtCn
+    font-size: 36px
+    line-height: 1.2
+    font-weight: 400
+    text-transform: uppercase
+    color: #78645d
+    margin-bottom: 18px
+    +lineSmole
+    @media ( max-width: $md1+px )
+        +adaptiv-font(36, 26.7, 2)
+    @media ( max-width: $md2+px )
+        +adaptiv-font(26.7, 18, 0)
+
+.show 
+    position: relative
+    width: 9.8em
+    height: 3.4em
+    margin-bottom: 4%
+    &::after
+        content: url(../img/icons/shopleft.png)
+        position: absolute
+        right: 15%
+        top: 30%
+    @media ( max-width: $md1+px )
+        +adaptiv-font(16, 11.6, 2)
+
+
+.swiper-header__pagination 
+    bottom: -20px
+    text-align: center
+.swiper-container-horizontal
+    .swiper-pagination-bullets
+        .swiper-pagination-bullet
+            cursor: pointer
+            width: 10px
+            height: 10px
+            background: #867a76
+            margin: 0 10px
+        .swiper-pagination-bullet-active
+            background: $mainColor
+    .swiper-scrollbar
+        bottom: 40px
+        @media ( max-width: $md2+px )
+            bottom: 30px
+        .swiper-scrollbar-drag
+            height: 7px
+            opacity: 0.2
+            background-color: #000000
+.swiper-header__prev 
+    position: absolute
+    width: 30px
+    height: 117px
+    opacity: 0.9
+    background-color: #ffffff
+    left: 0
+    top: 45%
+    transform: translateY(-50%)
+    z-index: 100
+    cursor: pointer
+    &::after
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        content: url('../img/icons/left.png')        
+        width: 12px
+        height: 18px
+        opacity: 0.2
+        font-weight: 900
+        color: #000000
+.swiper-header__next
+    position: absolute
+    width: 30px
+    height: 117px
+    opacity: 0.9
+    background-color: #ffffff
+    right: 0
+    top: 45%
+    transform: translateY(-50%)
+    z-index: 100
+    cursor: pointer
+    &::after
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        content: url('../img/icons/right.png')
+        width: 12px
+        height: 18px
+        opacity: 0.2
+        color: #000000
+        font-weight: 900
+

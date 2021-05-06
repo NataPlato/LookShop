@@ -1,0 +1,160 @@
+.footer 
+    background-color: #ededed
+    &__title
+        font-family: ArialMT
+        margin-bottom: 13px
+        font-size: 16px
+        line-height: 20px
+        font-weight: 700
+        letter-spacing: -0.01em
+        color: #544f4d
+    &__payment 
+        width: 100%
+        height: 58px
+        background-color: #f7f7f7
+        display: flex
+        justify-content: center
+        align-items: center
+        @media ( max-width: $md3+px )
+            display: none
+        span
+            opacity: 0.5
+            font-size: 12px
+            color: #414141
+            margin-right: 15px
+    &__links
+        display: flex
+        justify-content: space-between
+        padding: 34px 0
+        @media ( max-width: $md1+px )
+            padding: 34px 10px 0 10px
+        @media ( max-width: $md2+px )
+            padding: 34px 10px 0 10px
+        @media ( max-width: $md3+px )
+            padding: 0px 0px 0px 0px
+
+        &_items 
+            display: flex
+            flex-wrap: wrap
+            flex: 1
+            justify-content: space-between
+            @media ( max-width: $md2+px )
+                width: 360px
+            @media ( max-width: $md3+px )
+                display: none
+        &_item
+            @media ( max-width: $md1+px )
+                margin-bottom: 40px
+            width: 160px
+            a
+                font-size: 12px
+                line-height: 18px
+                font-weight: 400
+                color: #544f4d
+                opacity: 0.7
+
+
+        &_social
+            width: 130px
+            flex-shrink: 0
+            margin-right: 5%
+            @media ( max-width: $md1+px )
+                margin-right: 0
+            @media ( max-width: $md3+px )
+                display: none
+        &_link
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            padding-top: 7px
+
+            a
+                opacity: 1
+            img
+                width: 35px
+                height: 34px
+
+        &_image
+            margin: auto 0
+            @media ( max-width: $md1+px )
+                margin: 25px 20px 0 60px
+            @media ( max-width: $md2+px )
+                margin: 25px 10px 0px 40px
+            @media ( max-width: $md3+px )
+                display: none
+            img
+                display: block
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 100%
+        position: relative
+        @media ( max-width: $md1+px )
+            padding: 0 10px
+    &__nav 
+        width: 100%
+        height: 74px
+        background-color: #000000
+        font-size: 11px
+        line-height: 20px
+        font-weight: 400
+        color: #8d8d8d
+        @media ( max-width: $md3+px )
+            height: 4.45em
+            +adaptiv-font(24, 12, 0)
+        &_items 
+            @media ( max-width: $md3+px )
+                position: absolute
+                display: flex
+                flex-direction: column
+                justify-content: space-evenly
+                top: 0
+                right: -100%
+                width: 80vw
+                height: 100vh
+                background-color: rgba(0, 0, 0, 0.932)
+                transition: 0.8s ease 0s
+                z-index: 100
+                &.vizible-footer
+                    transition: 0.8s ease 0s
+                    right: 0
+                    z-index: 1000
+        &_item 
+            color: inherit
+            @media ( max-width: $md3+px )
+                color: #ffffff
+                font-size: 25px
+                width: inherit
+                text-align: center
+            &:not(:last-child)
+                padding-right: 10px
+                border-right: 2px solid #8d8d8d
+                @media ( max-width: $md3+px )
+                    border-right: none
+            &:not(:first-child)
+                padding-left: 10px            
+        &_copy
+            line-height: 18px
+            text-align: end
+            @media ( max-width: $md3+px )
+                margin-left: auto
+                line-height: 30px
+        
+     
+    &__menu
+        @media ( max-width: $md2+px )
+            display: none
+        @media ( max-width: $md3+px )
+            display: block
+            position: absolute
+        &-icon
+            @media ( max-width: $md3+px )
+                display: block
+                position: absolute
+                top: 50%
+                left: 0
+                transform: translate(50%, -50%)
+
+
+

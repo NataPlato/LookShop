@@ -1,0 +1,82 @@
+.swiper-shop 
+    height: 502px
+    max-width: 1200px
+    margin: 25px auto
+    overflow: hidden
+    @media ( max-width: $md2+px )
+       display: none
+.swiper-shop__wrapper 
+    display: flex
+    align-items: center
+    height: 460px
+    @media ( max-width: $md2+px )
+        height: 565px
+.swiper-shop__control
+    @media ( max-width: $md1+px )
+        padding: 0 10px
+.swiper-shop__tab
+    cursor: pointer
+    &:hover, 
+    &:active
+        background-color: $mainColor
+        color: #ffffff
+        transition: 0.5s all
+.swiper-shop__slide
+    background-color: $mainColor
+    width: 220px
+    .cart
+        margin: 30px 0 0 15px
+        &:last-child
+            display: block
+.swiper-shop__prev
+    position: relative
+    width: 47px
+    height: 47px
+    background-color: #f2f2f2
+    cursor: pointer
+    @media ( max-width: $md3+px )
+        display: none
+    &::after
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        content: url(../img/icons/showleft.png)
+        width: 14px
+        height: 27px
+        color: #979797
+.swiper-shop__next 
+    position: relative
+    width: 47px
+    height: 47px
+    background-color: $mainColor
+    cursor: pointer
+    &::after
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        content: url(../img/icons/showright.png)
+        width: 14px
+        height: 27px
+        color: #979797
+    @media ( max-width: $md3+px )
+        display: none
+.swiper-shop__control 
+    display: flex
+.swiper-shop__tabs
+    display: flex
+    align-items: center
+    margin-right: auto
+.swiper-shop__tab 
+    font-size: 15px
+    line-height: 3.1
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: -0.01em
+    color: #555555
+    padding: 0 15px
+  
+
+        
+

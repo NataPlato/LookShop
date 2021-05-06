@@ -1,0 +1,147 @@
+.header
+    &__container 
+        @media ( max-width: $md1+px )
+            padding: 0 10px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 3%
+        padding-bottom: 3%
+        @media ( max-width: $md3+px )
+            flex-direction: column
+    &__logo 
+        width: 120px
+        margin-right: 10px        
+        transition: all 0.5s
+        &:hover
+            box-shadow: 0.8px 2px 2px rgba(0,0,0,0.25), 0.8px 2px 2px rgba(0,0,0,0.22)
+            transition: all 0.5s
+        @media ( max-width: $md3+px )
+            box-shadow: none
+            width: 56%
+            padding-top: 5%
+            padding-bottom: 8%
+        img
+            display: block
+            width: 100%
+            object-fit: cover
+    nav
+        margin-left: auto
+        margin-right: 15px
+    &__nav 
+        display: flex
+        @media ( max-width: $md2+px )
+            position: absolute
+            flex-direction: column
+            justify-content: space-evenly
+            padding: 20px 
+            height: 100vh
+            width: 80vw
+            top: 0
+            left: -100%
+            background-color: rgba($mainColor, .97)
+            transition: 0.8s ease 0s
+            &.vizible
+                transition: 0.8s ease 0s
+                left: 0
+                z-index: 1000
+
+        &-item 
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+        
+            &:not(:last-child)
+                margin-right: 25px
+            @media ( max-width: $md2+px )
+                width: 100%
+                &:not(:last-child)
+                    margin-right: 0
+                
+        &-link
+            font-size: 16px
+            letter-spacing: -0.005em
+            display: inline-block
+            position: relative
+            color: #000000 
+            line-height: 1
+            &:after
+                display: block
+                position: absolute
+                left: 0
+                width: 0
+                height: 2px
+                background-color: $mainColor
+                content: ""
+                transition: width 0.5s ease-out
+            &:hover:after,
+            &:focus:after                    
+                width: 100%
+            @media ( max-width: $md2+px )
+                +adaptiv-font(30, 22, 0)
+                color: #ffffff
+        .arrowDown 
+            font-size: 6px
+            margin-left: 5px
+            @media ( max-width: $md2+px )
+                color: #ffffff
+
+    &__cart 
+        width: 214px
+        cursor: pointer
+        @media ( max-width: $md3+px )
+            width: 100%
+        .cart__select 
+            padding: 0 11px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            height: 33px
+            font-size: 12px
+            line-height: 1.2
+            font-weight: 400
+            letter-spacing: -0.005em
+            color: #949393
+            background-color: #ffffff
+            border: 1px solid #d6d6d6
+            @media ( max-width: $md3+px )
+                display: none
+
+            .arrowDown
+                font-size: 6px
+                color: #c1c1c1
+
+        .cart__counters 
+            display: flex
+            padding: 0 11px
+            justify-content: space-between
+            align-items: center
+            height: 33px
+            font-size: 12px
+            line-height: 1.2
+            font-weight: 400
+            letter-spacing: -0.005em
+            color: #949393
+            border: 1px solid #d6d6d6
+            border-top: none
+            font-size: 11px
+            text-transform: uppercase
+            background-color: #fafafa
+            @media ( max-width: $md3+px )
+                border: 1px solid #d6d6d6
+                width: 100%
+                height: 3.2em
+                +adaptiv-font(30, 13, 0)
+            span
+                margin: 0px 6px 0px 6px
+            .counters-img 
+                flex: 1 1 auto
+                svg
+                    width: 20px
+                    height: 19px
+                    display: block
+                    @media ( max-width: $md3+px )
+                        width: 1.7em
+                        height: 1.65em

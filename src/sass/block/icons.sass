@@ -1,0 +1,40 @@
+@font-face 
+    font-family: 'icomoon'
+    src: url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.woff2#icons') format('woff2')
+    font-weight: normal
+    font-style: normal
+    font-display: block
+
+
+%ic 
+    font-family: 'icomoon'
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+
+[class^="_icon-"],
+[class*=" _icon-"] 
+    &:before
+        @extend %ic
+        display: block
+        
+            
+
+._icon-arrowDown:before 
+  content: "\e902"
+
+._icon-arrowRight:before 
+  content: "\e900"
+
+._icon-arrowLeft:before 
+  content: "\e901"
+
+
+
+
+

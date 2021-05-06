@@ -1,0 +1,77 @@
+.contacts 
+    background-color: #ededed
+    @media ( max-width: $md3+px )
+        background-color: #ffffff
+    &__wrapper 
+        min-height: 55px
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media ( max-width: $md1+px )
+            padding: 0 10px
+        @media ( max-width: $md3+px )
+            flex-direction: column
+    &__email 
+        display: flex
+        align-items: center
+        height: inherit
+        @media ( max-width: $md3+px )
+            +adaptiv-font(30, 18, 0)
+            height: 3.2em
+            width: 100%
+        &_text 
+            margin-right: 10px
+            @media ( max-width: $md3+px )
+                display: none
+        &_input 
+            width: 160px
+            height: 28px
+            background-color: #ffffff
+            font-style: italic
+            padding: 9px 0px 9px 9px
+            @media ( max-width: $md3+px )
+                height: 100%
+                width: 100%
+                background-color: #ededed
+                +adaptiv-font(26, 12, 0)
+    &__social 
+        display: flex
+        justify-content: center
+        align-items: center
+        @media ( max-width: $md3+px )
+            margin-top: 3%
+            +adaptiv-font(26, 16, 0)
+        &_text 
+            margin-right: 10px
+            @media ( max-width: $md3+px )
+                margin-right: 35px
+            @media ( max-width: $md4+px )
+                margin-right: 15px
+        &_links 
+            display: flex
+        &_link
+            width: 55px
+            height: 55px
+            background-color: #f7f7f7
+            border: 1px solid #ededed
+  
+            @media ( max-width: $md3+px )
+                width: 3.4em
+                height: 3.35em
+            a
+                display: flex
+                height: 100%
+                align-items: center
+                justify-content: center
+                box-shadow: 0 7px 7px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22)
+                transition: all 0.5s
+                @media ( max-width: $md3+px )
+                    svg
+                        width: 35px
+                        height: 35px
+        
+                &:hover
+                    transition: 0.5s all
+                    background-color: #ededed
+                    box-shadow: none

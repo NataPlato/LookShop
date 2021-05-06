@@ -1,0 +1,38 @@
+.shop 
+    display: none
+    @media ( max-width: $md2+px )
+        display: block
+        margin-top: 25px
+    &__control 
+        height: 2.7em
+        padding: 0 30px
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: -0.005em
+        font-weight: 400
+        line-height: 3
+        color: #ffffff
+        background-color: #f4845d
+        @media ( max-width: $md3+px )
+            height: 3.2em
+            +adaptiv-font(30, 13, 0)
+        svg
+            fill: #c1c1c1
+    &__wrapper 
+        background-color: $mainColor
+        padding: 0 10px 30px 10px
+    &__carts 
+        display: flex
+        justify-content: center
+
+    .cart
+        margin: 33px 15px
+        &:last-child
+            display: block
+        @media ( max-width: $md2+px )
+            &:nth-child(3)            
+                display: none
+        @media ( max-width: $md4+px )
+            &:nth-child(2)
+                display: none
+  
