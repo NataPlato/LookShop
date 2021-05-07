@@ -2322,7 +2322,7 @@ html {
   }
 
   .footer__nav_items {
-    position: absolute;
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2333,7 +2333,7 @@ html {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    top: 0;
+    bottom: 0;
     right: -100%;
     width: 80vw;
     height: 100vh;

@@ -3,7 +3,6 @@ const menu = document.querySelectorAll(".menu"),
   headerNav = document.querySelector(".header__nav"),
   footerNav = document.querySelector(".footer__nav_items");
 
-
 let workWithMenu = function () {
   menuIcon.forEach(e => {
     e.addEventListener("click", function () {
@@ -30,5 +29,6 @@ let workWithNav = function () {
     });
   });
 };
+
 
 workWithNav();
