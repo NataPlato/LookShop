@@ -37,3 +37,20 @@ const swiperShop = new Swiper(".swiper-shop", {
   },
   speed: 1000,
 });
+
+const swiperProducts = new Swiper(".swiper-products", {
+  navigation: {
+    nextEl: ".swiper-products__next",
+    prevEl: ".swiper-products__prev",
+  },
+  speed: 1000,
+  pagination: {
+    el: ".swiper-products__pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+  },
+});

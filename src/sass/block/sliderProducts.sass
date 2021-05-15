@@ -1,0 +1,97 @@
+.swiper-products 
+    height: 480px
+
+    &__wrapper 
+        height: 440px
+        display: flex
+    &__slide 
+        width: 100%
+
+    &__content 
+        display: flex
+        height: 100%
+        padding: 0 25px
+    &__img 
+        display: flex
+        flex: 0 0 60%
+        justify-content: center
+        overflow: hidden
+        img
+            width: 100%
+            display: block
+    &__info 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+
+        .goods-name 
+            font-size: 24px
+            letter-spacing: -0.025em
+            color: #4a4a4a
+            margin-bottom: 25px
+        .goods-price 
+            font-size: 36px
+            font-weight: 700
+            letter-spacing: -0.025em
+            color: #fd926d
+            margin-bottom: 31px
+        .goods-descr 
+            color: #8f8f8f
+            margin-bottom: 33px
+        .cart-button 
+            width: 157px
+            height: 47px
+            .btn-icon
+                margin-left: 10%
+    &__pagination 
+        bottom: -20px
+        text-align: center
+    .swiper-container-horizontal
+        .swiper-pagination-bullets
+            .swiper-pagination-bullet
+                cursor: pointer
+                width: 10px
+                height: 10px
+                background: #867a76
+                margin: 0 10px
+            .swiper-pagination-bullet-active
+                background: $mainColor
+
+    &__prev 
+        position: absolute
+        width: 30px
+        height: 117px
+        opacity: 0.9
+        background-color: #ffffff
+        left: 0
+        bottom: 50%
+        transform: translateY(-50%)
+        z-index: 100
+        cursor: pointer
+        &::after
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            content: url('../img/icons/left.png')   
+            opacity: 0.2
+       
+    &__next
+        position: absolute
+        width: 30px
+        height: 117px
+        opacity: 0.9
+        background-color: #ffffff
+        right: 0
+        bottom: 50%
+        transform: translateY(-50%)
+        z-index: 100
+        cursor: pointer
+        &::after
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            content: url('../img/icons/right.png')
+            opacity: 0.2

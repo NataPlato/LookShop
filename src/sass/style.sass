@@ -18,6 +18,8 @@ html
 @import "block/slider";
 @import "block/contacts";
 @import "block/sliderShop";
+@import "block/sliderProducts";
+@import "block/products";
 @import "block/shop";
 @import "block/clearance";
 @import "block/collection";
@@ -62,7 +64,7 @@ html
 .hidden
     display: none       
 
-.miniText
+.mini-text
     font-size: 12px
     line-height: 1.2
     font-weight: 400
@@ -105,23 +107,37 @@ html
         margin-bottom: 6px
         @media ( max-width: $md3+px )
             height: 360px
-    .goods-img
-        width: 100%
-        img       
-            height: 100%
+        .goods-img
             width: 100%
-            display: block
+            img       
+                height: 100%
+                width: 100%
+                display: block
     &__info 
         text-align: center
         width: 100%
         .goods-name 
+            display: inline-block
+            position: relative
             font-size: 12px
             line-height: 1.2
             font-weight: 400
-            text-transform: uppercase
+            text-transform: uppercase            
             letter-spacing: -0.01em
             color: #373737
             margin-bottom: 6px
+            &:after
+                display: block
+                position: absolute
+                left: 0
+                width: 0
+                height: 2px
+                background-color: $mainColor
+                content: ""
+                transition: width 0.5s ease-out
+            &:hover:after,
+            &:focus:after                    
+                width: 100%
             @media ( max-width: $md3+px )
                 +adaptiv-font(18, 12, 0)
         .goods-price 
