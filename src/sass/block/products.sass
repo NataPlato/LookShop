@@ -1,67 +1,81 @@
-.products__contain
-    display: flex
-    .products__carts_block
+.products
+    &__select
+        height: 30px
+        margin: 0 15px 30px 15px
+        &-box
+            height: 100%
+            select
+                font-size: 11px           
+                letter-spacing: -0.005em
+                color: #4d4d4d
+                background-color: #f4f4f4
+                height: 100%
+                width: 100px
+            label       
+                margin-right: 10px
+                font-size: 11px   
+                letter-spacing: -0.005em
+                color: #4d4d4d
+                height: 100%           
+    &__contain
         display: flex
-        flex-wrap: wrap
-        margin-bottom: 16px
-        .cart
-            margin: 10px 
-    .products__aside_block
-        .categories 
-            margin-bottom: 30px
-            &__block
-                width: 230px             
-                font-size: 12px
-                line-height: 32px
-                text-transform: uppercase
-                letter-spacing: -0.025em
-                color: #ffffff                
-                span
-                    display: block
-                    height: 31px
-                    background-color: #000000
-                    padding: 0 10px
-                &_title 
-                    display: block
-                    line-height: 26px
-                    color: #727272
-                    border-bottom: 1px solid #d6d6d6
-                &_links
-                    padding-left: 15px
-                    display: hidden
-                    li
-                        list-style-type: square
-                        color: $mainColor
-                    &-link 
+        .products__cards_block
+            display: flex
+            flex-wrap: wrap
+            margin-bottom: 16px
+            border-top: 1px solid #d6d6d6
+            .card
+                margin: 10px 
+        .products__aside_block
+            .categories 
+                margin-bottom: 30px
+                &__block
+                    &_title 
                         display: block
-                        font-size: 11px
-                        line-height: 18px
+                        line-height: 26px
                         color: #727272
-                        text-transform: capitalize
-                        transition: 0.5s all
-                        @media ( min-width: $md1+px )
-                            &:hover
-                                font-weight: 700
-                                color: #333333
-                                transition: 0.5s all
-        .filter 
+                        border-bottom: 1px solid #d6d6d6
+                    &_links
+                        padding-left: 15px
+                        display: hidden
+                        li
+                            list-style-type: square
+                            color: $mainColor
+                        &-link 
+                            display: block
+                            font-size: 11px
+                            line-height: 18px
+                            color: #727272
+                            text-transform: capitalize
+                            transition: 0.5s all
+                            @media ( min-width: $md1+px )
+                                &:hover
+                                    font-weight: 700
+                                    color: #333333
+                                    transition: 0.5s all
+            .filter 
+                margin-bottom: 40px
+                &__line 
+                    width: 229px
+                    height: 5px
+                    background-color: #e5e5e5
+                    margin-bottom: 10px
+                    span
+                        display: block
+                        background-color: $mainColor
+                        height: 100%
+                &__contant 
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    &_text 
+                        font-size: 12px
+                        text-transform: uppercase
+                        letter-spacing: -0.025em
+                        color: #848484
+            .sale    
+                margin-bottom: 23px           
 
-            &__line 
-                width: 229px
-                height: 5px
-                background-color: #e5e5e5
-                margin-bottom: 10px
-                span
-                    display: block
-                    background-color: $mainColor
-                    height: 100%
-            &__contant 
-                display: flex
-                justify-content: space-between
-                align-items: center
-                &_text 
-                    font-size: 12px
-                    text-transform: uppercase
-                    letter-spacing: -0.025em
-                    color: #848484
-
+            .featured
+                margin-bottom: 23px
+                

@@ -5,208 +5,280 @@
     <div class="wrapper">
       @@include('_header.html', { "link":"2" })
       <main>
-        @@include('_sliderProducts.html', {})
-        <div class="products__contain _container">
-          <div class="products__carts_block">
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good7.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">NADIA DRESS</h6>
-                <div class="goods-price">$64.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good8.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">SOFI BLOUSE</h6>
-                <div class="goods-price">$26.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good9.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">GOODING SHORTS</h6>
-                <div class="goods-price">$79.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good10.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">NADIA DRESS</h6>
-                <div class="goods-price">$64.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good11.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">SOFI BLOUSE</h6>
-                <div class="goods-price">$26.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good12.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">GOODING SHORTS</h6>
-                <div class="goods-price">$79.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good13.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">GOODING SHORTS</h6>
-                <div class="goods-price">$79.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good14.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">GOODING SHORTS</h6>
-                <div class="goods-price">$79.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div class="cart">
-              <a href="#" class="cart__img">
-                <img src="./img/good3.jpg" class="goods-img" alt="" />
-              </a>
-              <div class="cart__info">
-                <h6 class="goods-name">GOODING SHORTS</h6>
-                <div class="goods-price">$79.95</div>
-                <button class="cart-button btn">
-                  add to cart
-                  <div class="btn-icon">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </div>
+        <div class="products _container">
+          @@include('_sliderProducts.html', {})
+          <div class="products__select">
+            <form action="#" class="products__select-box">
+                <label for="select-box1" class="products__select-lable">
+                  <span>Sort by</span>
+                 </label>
+                <select id="select-box1" class="products__select-select">
+                  <option value="Choice 1">Date</option>
+                  <option value="Choice 2">Something</option>
+                  <option value="Choice 3">Something</option>
+                </select>
+            </form>
           </div>
-          <aside class="products__aside_block">
-            <div class="categories">
-              <ul class="categories__block">
-                <span>categories</span>
-                <li>
-                  <a href="#" class="categories__block_title">new</a>
-                  <ul class="categories__block_links hidden">
-                    <li><a href="" class="categories__block_links-link">woman</a></li>
-                    <li><a href="" class="categories__block_links-link">man</a></li>
-                  </ul>
+          <div class="products__contain _container">
+            <div class="products__cards_block">
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good7.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">NADIA DRESS</a>
+                  <div class="goods-price">$64.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good8.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">SOFI BLOUSE</a>
+                  <div class="goods-price">$26.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good9.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">GOODING SHORTS</a>
+                  <div class="goods-price">$79.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good10.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">NADIA DRESS</a>
+                  <div class="goods-price">$64.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good11.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">SOFI BLOUSE</a>
+                  <div class="goods-price">$26.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good12.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">GOODING SHORTS</a>
+                  <div class="goods-price">$79.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good13.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">GOODING SHORTS</a>
+                  <div class="goods-price">$79.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good14.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">GOODING SHORTS</a>
+                  <div class="goods-price">$79.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="card">
+                <a href="#" class="card__img">
+                  <img src="./img/good3.jpg" class="goods-img" alt="" />
+                </a>
+                <div class="card__info">
+                  <a class="goods-name">GOODING SHORTS</a>
+                  <div class="goods-price">$79.95</div>
+                  <button class="card-button btn">
+                    add to card
+                    <div class="btn-icon">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <aside class="products__aside_block">
+              <div class="categories">
+                <ul class="categories__block prod-title">
+                  <span>categories</span>
+                  <li>
+                    <a href="#" class="categories__block_title">new</a>
+                    <ul class="categories__block_links hidden">
+                      <li><a href="" class="categories__block_links-link">woman</a></li>
+                      <li><a href="" class="categories__block_links-link">man</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="categories__block_title">designers</a>
+                    <ul class="categories__block_links hidden">
+                      <li><a href="" class="categories__block_links-link">woman</a></li>
+                      <li><a href="" class="categories__block_links-link">man</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="categories__block_title">Woman</a>
+                    <ul class="categories__block_links hidden">
+                      <li><a href="" class="categories__block_links-link">Clothes</a></li>
+                      <li><a href="" class="categories__block_links-link">Shoes</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="categories__block_title">Man</a>
+                    <ul class="categories__block_links hidden">
+                      <li><a href="" class="categories__block_links-link">Clothes</a></li>
+                      <li><a href="" class="categories__block_links-link">Shoes</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="categories__block_title">clearance</a>
+                    <ul class="categories__block_links hidden">
+                      <li><a href="" class="categories__block_links-link">accessories</a></li>
+                      <li><a href="" class="categories__block_links-link">Shoes</a></li>
+                      <li><a href="" class="categories__block_links-link">Clothes</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <form class="filter">
+                <input type="range" class="filter__line">
+                  <span style="width: 80%"></span>
+                </input>
+                <div class="filter__contant">
+                  <p class="filter__contant_text">Price $0 - $200</p>
+                  <button class="btn-filter">filter</button>
+                </div>
+              </form>
+              <ul class="sale prod-title">
+                <span>on sale</span>
+                <li class="card-mini">
+                  <a href="#" class="card__img">
+                    <img src="./img/good14.jpg" class="goods-img" alt="" />
+                  </a>
+                  <div class="card__info">
+                    <a class="goods-name">PINTUCK TANK</a>
+                    <p class="goods-price">$96.55</p>
+                  </div>
                 </li>
-                <li>
-                  <a href="#" class="categories__block_title">designers</a>
-                  <ul class="categories__block_links hidden">
-                    <li><a href="" class="categories__block_links-link">woman</a></li>
-                    <li><a href="" class="categories__block_links-link">man</a></li>
-                  </ul>
+                <li class="card-mini">
+                  <a href="#" class="card__img">
+                    <img src="./img/good15.jpg" class="goods-img" alt="" />
+                  </a>
+                  <div class="card__info">
+                    <a class="goods-name">PINTUCK TANK</a>
+                    <p class="goods-price">$96.55</p>
+                  </div>
                 </li>
-                <li>
-                  <a href="#" class="categories__block_title">Woman</a>
-                  <ul class="categories__block_links hidden">
-                    <li><a href="" class="categories__block_links-link">Clothes</a></li>
-                    <li><a href="" class="categories__block_links-link">Shoes</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#" class="categories__block_title">Man</a>
-                  <ul class="categories__block_links hidden">
-                    <li><a href="" class="categories__block_links-link">Clothes</a></li>
-                    <li><a href="" class="categories__block_links-link">Shoes</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#" class="categories__block_title">clearance</a>
-                  <ul class="categories__block_links hidden">
-                    <li><a href="" class="categories__block_links-link">accessories</a></li>
-                    <li><a href="" class="categories__block_links-link">Shoes</a></li>
-                    <li><a href="" class="categories__block_links-link">Clothes</a></li>
-                  </ul>
+                <li class="card-mini">
+                  <a href="#" class="card__img">
+                    <img src="./img/good16.jpg" class="goods-img" alt="" />
+                  </a>
+                  <div class="card__info">
+                    <a class="goods-name">PINTUCK TANK</a>
+                    <p class="goods-price">$96.55</p>
+                  </div>
                 </li>
               </ul>
-            </div>
-            <form class="filter">
-              <input type="range" class="filter__line">
-                <span style="width: 80%"></span>
-              </input>
-              <div class="filter__contant">
-                <p class="filter__contant_text">Price $0 - $200</p>
-                <button class="btn-filter">filter</button>
-              </div>
-            </form>
-            <ul class="sale"></ul>
-            <ul class="featured"></ul>
-          </aside>
+              <ul class="featured prod-title">
+                <span>featured products</span>
+                <li class="card-mini">
+                  <a href="#" class="card__img">
+                    <img src="./img/good17.jpg" class="goods-img" alt="" />
+                  </a>
+                  <div class="card__info">
+                    <a class="goods-name">PINTUCK TANK</a>
+                    <p class="goods-price">$96.55</p>
+                  </div>
+                </li>
+                <li class="card-mini">
+                  <a href="#" class="card__img">
+                    <img src="./img/good18.jpg" class="goods-img" alt="" />
+                  </a>
+                  <div class="card__info">
+                    <a class="goods-name">PINTUCK TANK</a>
+                    <p class="goods-price">$96.55</p>
+                  </div>
+                </li>
+                <li class="card-mini">
+                  <a href="#" class="card__img">
+                    <img src="./img/good19.jpg" class="goods-img" alt="" />
+                  </a>
+                  <div class="card__info">
+                    <a class="goods-name">PINTUCK TANK</a>
+                    <p class="goods-price">$96.55</p>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+          </div>
         </div>
       </main>
       @@include('_footer.html',{})

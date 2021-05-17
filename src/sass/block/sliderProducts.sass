@@ -1,24 +1,30 @@
 .swiper-products 
+    position: relative
     height: 480px
-
+    overflow: hidden
     &__wrapper 
         height: 440px
-        display: flex
+        display: flex    
+        margin-bottom: 10px
+        width: max-content
     &__slide 
-        width: 100%
-
+    .swiper-slide-active
+        border-bottom: 1px solid #d6d6d6
+        border-top: 1px solid #d6d6d6
+        overflow: hidden
     &__content 
         display: flex
         height: 100%
-        padding: 0 25px
+        padding: 0 30px
     &__img 
         display: flex
         flex: 0 0 60%
         justify-content: center
         overflow: hidden
-        img
-            width: 100%
-            display: block
+        .card__img
+            height: 100%
+            .goods-img
+                width: auto
     &__info 
         display: flex
         flex-direction: column
@@ -26,10 +32,24 @@
         align-items: flex-start
 
         .goods-name 
+            position: relative
             font-size: 24px
             letter-spacing: -0.025em
             color: #4a4a4a
             margin-bottom: 25px
+            cursor: pointer
+            &:after
+                display: block
+                position: absolute
+                left: 0
+                width: 0
+                height: 2px
+                background-color: $mainColor
+                content: ""
+                transition: width 0.5s ease-out
+            &:hover:after,
+            &:focus:after                    
+                width: 100%
         .goods-price 
             font-size: 36px
             font-weight: 700
@@ -39,13 +59,13 @@
         .goods-descr 
             color: #8f8f8f
             margin-bottom: 33px
-        .cart-button 
+            width: 315px
+        .card-button 
             width: 157px
             height: 47px
             .btn-icon
                 margin-left: 10%
     &__pagination 
-        bottom: -20px
         text-align: center
     .swiper-container-horizontal
         .swiper-pagination-bullets
@@ -65,7 +85,7 @@
         opacity: 0.9
         background-color: #ffffff
         left: 0
-        bottom: 50%
+        top: 50%
         transform: translateY(-50%)
         z-index: 100
         cursor: pointer
@@ -84,7 +104,7 @@
         opacity: 0.9
         background-color: #ffffff
         right: 0
-        bottom: 50%
+        top: 50%
         transform: translateY(-50%)
         z-index: 100
         cursor: pointer
