@@ -46,25 +46,25 @@
                 transition: 0.8s ease 0s
                 left: 0
                 z-index: 1000
+                max-height: 100px
 
         &-item 
             display: flex
             justify-content: center
             align-items: center
             cursor: pointer
-        
+            position: relative
             &:not(:last-child)
                 margin-right: 25px
             @media ( max-width: $md2+px )
                 width: 100%
                 &:not(:last-child)
                     margin-right: 0
-                
+    
         &-link
             font-size: 16px
             letter-spacing: -0.005em
             display: inline-block
-            position: relative
             color: #000000 
             line-height: 1
             &:after

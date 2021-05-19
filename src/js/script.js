@@ -23,16 +23,16 @@ const swiperShop = new Swiper(".swiper-shop", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3.5
+      slidesPerView: 3.5,
     },
     780: {
-      slidesPerView: 4
+      slidesPerView: 4,
     },
     970: {
-      slidesPerView: 4.5
+      slidesPerView: 4.5,
     },
     1200: {
-      slidesPerView: 5
+      slidesPerView: 5,
     },
   },
   speed: 1000,
@@ -52,5 +52,16 @@ const swiperProducts = new Swiper(".swiper-products", {
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
+  },
+});
+
+const paddingSlider = document.querySelector(".filter__line");
+
+noUiSlider.create(paddingSlider, {
+  start: [0, 150],
+  connect: [false, true, false],
+  range: {
+    min: 0,
+    max: 100,
   },
 });
