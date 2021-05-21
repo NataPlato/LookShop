@@ -51,9 +51,14 @@
             +subHeaderSize
             option
                 background-color: #000000
+            @media ( max-width: $md1+px )
+                background: url(../img/icons/arrsubheader.png) right 13% bottom 45% no-repeat
             @media ( max-width: $md3+px )
+                background: url(../img/icons/arrsubheaderM.svg) right 13% bottom 50% no-repeat
+                background-size: 15%
                 color: #ffffff
-                width: 5em          
+                width: 5em  
+                background-color: #000000        
                 +adaptiv-font(30, 13, 0)   
         .arrowDown 
             margin-left: 5px

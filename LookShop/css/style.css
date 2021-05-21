@@ -328,34 +328,23 @@ html {
   position: relative;
 }
 
+.header__nav-item:hover .dropdown {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 .header__nav-item:not(:last-child) {
   margin-right: 25px;
 }
 
 .header__nav-link {
   font-size: 16px;
+  font-weight: 600;
   letter-spacing: -0.005em;
   display: inline-block;
   color: #000000;
   line-height: 1;
-}
-
-.header__nav-link:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #fd926d;
-  content: "";
-  -webkit-transition: width 0.5s ease-out;
-  -o-transition: width 0.5s ease-out;
-  transition: width 0.5s ease-out;
-}
-
-.header__nav-link:hover:after,
-.header__nav-link:focus:after {
-  width: 100%;
 }
 
 .header__nav .arrowDown {
@@ -2252,16 +2241,51 @@ html {
   color: #fd926d;
 }
 
-.dropdown {
+.sub-menu__wrapper {
   position: absolute;
+  overflow: hidden;
   top: 15px;
+  z-index: 100;
+  width: 120px;
+  text-align: center;
+}
+
+.dropdown {
   left: 0;
+  -webkit-transform: translateY(-110%);
+      -ms-transform: translateY(-110%);
+          transform: translateY(-110%);
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: 5px;
+}
+
+.dropdown li {
+  margin-bottom: 5px;
+}
+
+.dropdown__link {
+  font-family: ArialMT;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  color: #000000;
 }
 
 @media (min-width: 980px) {
   .products__contain .products__aside_block .categories__block_links-link:hover {
     font-weight: 700;
     color: #333333;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+  }
+
+  .dropdown li:hover {
+    background-color: #ededed;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
     transition: 0.5s all;
@@ -2290,6 +2314,10 @@ html {
 
   .subheader__container {
     padding: 0 10px;
+  }
+
+  .subheader .account__currency {
+    background: url(../img/icons/arrsubheader.png) right 13% bottom 45% no-repeat;
   }
 
   .subheader .account__block {
@@ -2414,7 +2442,7 @@ html {
     transition: 0.8s ease 0s;
     left: 0;
     z-index: 1000;
-    max-height: 100px;
+    max-height: 100vh;
   }
 
   .header__nav-item {
@@ -2595,6 +2623,19 @@ html {
     margin-left: 5px;
     margin-right: 5px;
   }
+
+  .sub-menu__wrapper {
+    top: 25px;
+    width: 100%;
+  }
+
+  .dropdown {
+    background: none;
+  }
+
+  .dropdown__link {
+    color: #ffffff;
+  }
 }
 
 @media (max-width: 767.98px) and (max-width: 641.98px) {
@@ -2702,8 +2743,11 @@ html {
   }
 
   .subheader .account__currency {
+    background: url(../img/icons/arrsubheaderM.svg) right 13% bottom 50% no-repeat;
+    background-size: 15%;
     color: #ffffff;
     width: 5em;
+    background-color: #000000;
     font-size: calc( 13px + 17 * ((100vw - 320px) / 319));
   }
 
@@ -2970,3 +3014,8 @@ html {
 .webp .clearance__title { background-image: url(../img/layersnew.webp); }
 
 .webp .collection .block__wrapper .block-two_text { background-image: url(../img/bl2minibg.webp); }
+
+@media (max-width: 980px) {
+
+  .webp .subheader .account__currency { background: url(../img/icons/arrsubheader.webp) right 13% bottom 45% no-repeat; }
+}

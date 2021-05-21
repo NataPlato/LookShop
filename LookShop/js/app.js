@@ -1,7 +1,10 @@
 const menu = document.querySelectorAll(".menu"),
   menuIcon = document.querySelectorAll(".menu-icon"),
   headerNav = document.querySelector(".header__nav"),
-  footerNav = document.querySelector(".footer__nav_items");
+  footerNav = document.querySelector(".footer__nav_items"),
+  menuLink = document.querySelectorAll(".header__nav-link");
+console.log(menuLink);
+
 
 let workWithMenu = function () {
   menuIcon.forEach(e => {
@@ -29,6 +32,12 @@ let workWithNav = function () {
     });
   });
 };
-
-
 workWithNav();
+
+const dropdowmNav = function () {
+  menuLink.forEach(el => {
+    el.addEventListener("mouseover", function () {
+
+    })
+  })
+}

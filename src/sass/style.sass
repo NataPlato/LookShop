@@ -235,9 +235,49 @@ html
             text-transform: uppercase
             letter-spacing: -0.025em
             color: $mainColor
-.dropdown 
+.sub-menu__wrapper
     position: absolute
-    top: 15px
+    overflow: hidden
+    top: 15px      
+    z-index: 100     
+    width: 120px
+    text-align: center 
+    @media ( max-width: $md2+px )
+        top: 25px
+        width: 100%
+.dropdown
     left: 0
-
+    transform: translateY(-110%)
+    transition: 0.5s all
+    background: rgba(255, 255, 255, 0.4)
+    margin-top: 5px
+    @media ( max-width: $md2+px )
+        background: none
+    li
+        margin-bottom: 5px
+        @media ( min-width: $md1+px )
+            &:hover
+                background-color: #ededed
+                transition: 0.5s all
+        // &:after
+        //     display: block
+        //     position: absolute
+        //     content: ""
+        //     left: 0
+        //     width: 0
+        //     height: 2px
+        //     background-color: $mainColor
+        //     transition: all 0.5s ease-out
+        //     &:hover:after, &:focus:after                    
+        //         width: 100%
     &__link 
+        font-family: ArialMT
+        font-size: 16px
+        line-height: 1.2
+        font-weight: 400
+        letter-spacing: -0.005em
+        color: #000000
+        @media ( max-width: $md2+px )
+            color: #ffffff
+
+
