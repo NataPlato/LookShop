@@ -2,9 +2,7 @@ const menu = document.querySelectorAll(".menu"),
   menuIcon = document.querySelectorAll(".menu-icon"),
   headerNav = document.querySelector(".header__nav"),
   footerNav = document.querySelector(".footer__nav_items"),
-  menuLink = document.querySelectorAll(".header__nav-link");
-console.log(menuLink);
-
+  selectItem = document.querySelectorAll(".select__item > span");
 
 let workWithMenu = function () {
   menuIcon.forEach(e => {
@@ -34,10 +32,15 @@ let workWithNav = function () {
 };
 workWithNav();
 
-const dropdowmNav = function () {
-  menuLink.forEach(el => {
-    el.addEventListener("mouseover", function () {
-
-    })
-  })
-}
+const selectSize = function () {
+  selectItem.forEach(el => {
+    el.addEventListener("click", function () {
+      if (this.classList.contains("_active")) {
+        this.classList.remove("_active");
+      } else {
+        this.classList.add("_active");
+      }
+    });
+  });
+};
+selectSize();

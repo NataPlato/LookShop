@@ -7,20 +7,11 @@
       <main>
         <div class="products _container">
           @@include('_sliderProducts.html', {})
-          <div class="products__select">
-            <form action="#" class="products__select-box">
-              <label for="select-box1" class="products__select-lable">
-                <span>Sort by</span>
-              </label>
-              <select id="select-box1" class="products__select-select">
-                <option value="Choice 1">Date</option>
-                <option value="Choice 2">Something</option>
-                <option value="Choice 3">Something</option>
-              </select>
-            </form>
-          </div>
+  
           <div class="products__contain _container">
+  
             <div class="products__cards_block">
+   
               <div class="card">
                 <a href="#" class="card__img">
                   <img src="./img/good7.jpg" class="goods-img" alt="" />
@@ -213,6 +204,31 @@
                 <div class="filter__contant">
                   <p class="filter__contant_text">Price $0 - $200</p>
                   <button class="btn-filter">filter</button>
+                </div>
+              </div>
+              <div class="select">
+                <div class="select__title prod-title">Select your size</div>
+                <div class="select__wrapper">
+                  <label class="select__item">
+                  <input type="checkbox" value="xs" id="xs"></input>
+                  <span class="_active">xs</span>
+                  </label>  
+                  <label class="select__item">
+                    <input type="checkbox" value="s" id="s"></input>
+                    <span>s</span>
+                  </label>    
+                  <label class="select__item">
+                    <input type="checkbox" value="m" id="m"></input>
+                    <span>m</span>
+                  </label>     
+                  <label class="select__item">
+                    <input type="checkbox" value="l" id="l"></input>
+                    <span>l</span>
+                  </label>   
+                  <label class="select__item">
+                    <input type="checkbox" value="xl" id="xl"></input>
+                    <span>xl</span>
+                  </label>        
                 </div>
               </div>
               <ul class="sale prod-title">

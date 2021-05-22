@@ -22,15 +22,18 @@
         .products__cards_block
             display: flex
             flex-wrap: wrap
+            max-width: 730px
             margin-bottom: 16px
             border-top: 1px solid #d6d6d6
+            margin-right: 20px
             .card
                 margin: 10px 
         .products__aside_block
+            flex-grow: 0
+            flex-shrink: 0
             .categories 
                 margin-bottom: 30px
-                height: 300px
-
+                height: 230px
                 &__block
                     &_title 
                         display: block
@@ -70,7 +73,7 @@
                                     color: #333333
                                     transition: 0.5s all
             .filter 
-                margin-bottom: 40px
+                margin-bottom: 20px
                 width: 100%
                 &__line 
                     height: 5px
@@ -130,3 +133,50 @@
             .featured
                 margin-bottom: 23px
                 
+            .select 
+                margin-bottom: 35px
+
+                &__title 
+                    color: #5e5e5e
+
+                &__wrapper 
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                &__item > input
+                    position: absolute
+                    z-index: -1
+                    opacity: 0
+             
+
+                &__item > span
+                    display: inline-block
+                    user-select: none  
+                    position: relative  
+                    z-index: 100  
+                    width: 30px
+                    height: 31px  
+                    text-align: center   
+                    background-color: #f4f4f4           
+                    color: #4d4d4d 
+                    line-height: 30px
+                    font-size: 11px
+                    text-transform: uppercase
+                    &:checked,
+                    &:active,
+                    &:focus                                               
+                        background-color: $mainColor
+                        color: #ffffff
+                    &::before
+                        content: ''
+                        position: absolute
+                        display: inline-block
+                        width: 100%
+                        height: 100%                    
+                        cursor: pointer
+                        top: 0
+                        left: 0 
+                ._active
+                    background-color: $mainColor
+                    color: #ffffff
+             
