@@ -2,7 +2,8 @@ const menu = document.querySelectorAll(".menu"),
   menuIcon = document.querySelectorAll(".menu-icon"),
   headerNav = document.querySelector(".header__nav"),
   footerNav = document.querySelector(".footer__nav_items"),
-  selectItem = document.querySelectorAll(".select__item > span");
+  selectItem = document.querySelectorAll(".select__item > span"),
+  mainBlockNavItem = document.querySelectorAll(".main-block__nav-item");
 
 let workWithMenu = function () {
   menuIcon.forEach(e => {
@@ -44,3 +45,17 @@ const selectSize = function () {
   });
 };
 selectSize();
+
+const workWithProductsNav = () => {
+  mainBlockNavItem.forEach(e => {
+    e.addEventListener("click", function () {
+      mainBlockNavItem.forEach(el => {
+        if (el.classList.contains("nav-item_active")) {
+          el.classList.remove("nav-item_active");
+        }
+        e.classList.add("nav-item_active");
+      });
+    });
+  });
+};
+workWithProductsNav();

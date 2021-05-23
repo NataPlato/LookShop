@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const accordionBtn = document.querySelectorAll(".categories__block_title");
 
-  accordionBtn.forEach((e, i) => {
+  accordionBtn.forEach(e => {
     e.addEventListener("click", () => {
       accordionBtn.forEach(btn => {
         if (btn.classList.contains("categories__block_title-active") && btn !== e)
