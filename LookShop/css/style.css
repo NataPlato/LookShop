@@ -1017,7 +1017,7 @@ html {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  content: url(../img/icons/showleft.png);
+  content: url(../img/icons/showLeft.png);
   width: 14px;
   height: 27px;
   color: #979797;
