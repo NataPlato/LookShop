@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('_head.html', {'title':'Product'})
+  <body>
+    <div class="wrapper">
+      @@include('_header.html', { "link":"2" })
+      <main>
+        <div class="product__card _container">
+          <div class="rpoduct__card_img card-img">
+            <div class="card-img__main">
+              <img src="./img/clear2.jpg" alt="#" />
+            </div>
+            <div class="card-img__mini">
+              <img src="./img/clear2.jpg" alt="#" />
+              <img src="./img/clear101.jpg" alt="#" />
+              <img src="./img/clear102.jpg" alt="#" />
+              <img src="./img/clear103.jpg" alt="#" />
+            </div>
+          </div>
+          <div class="product__card_descr card-descr">
+            <div class="card-descr__link-back">
+              <a href="#">Back to <span>Women’s Clothing</span></a>
+            </div>
+            <h1 class="goods-name">Sofi Blouse</h1>
+            <div class="goods__wrapper">
+              <h3 class="goods-price">$98.95</h3>
+              <div class="goods__reviews">
+                <span>12 reviews</span>
+                <div class="goods__reviews_rating"></div>
+              </div>
+            </div>
+            <p class="goods-descr mini-text">
+              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+              aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,
+              nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+              mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare
+              odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat
+              justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+              elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat
+              sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque.
+              Suspendisse in orci enim.
+            </p>
+            <div class="goods__select">
+              <form action="#" class="main-block__form">
+                <label for="pcs">Select size</label>
+                <select id="pcs" class="main-block__select">
+                  <option selected="selected" value=""></option>
+                  <option value="xs">xs</option>
+                  <option value="s">s</option>
+                  <option value="m">m</option>
+                  <option value="l">l</option>
+                  <option value="xl">xl</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('_footer.html',{})
+    </div>
+    @@include('_popup.html', {}) @@include('_js.html', {})
+  </body>
+</html>

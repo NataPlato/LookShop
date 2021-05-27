@@ -23,4 +23,5 @@ yarn-error.log*
 # gulpfile.js
 # package.json
 package-lock.json
+.idea
 # .gitignore

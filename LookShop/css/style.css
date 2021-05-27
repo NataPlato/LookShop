@@ -1597,6 +1597,95 @@ html {
   color: #ffffff;
 }
 
+.product__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__card .card-img {
+  margin-right: 29px;
+  margin-bottom: 35px;
+}
+
+.product__card .card-img__main {
+  width: 400px;
+  height: 500px;
+  margin-bottom: 15px;
+}
+
+.product__card .card-img__main img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.product__card .card-img__mini {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__card .card-img__mini img {
+  width: 90px;
+  height: 110px;
+  display: block;
+}
+
+.product__card .card-descr .goods-name {
+  font-size: 24px;
+  letter-spacing: -0.025em;
+  color: #4a4a4a;
+}
+
+.product__card .card-descr .goods-price {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #fd926d;
+}
+
+.product__card .card-descr .goods-descr {
+  color: #8f8f8f;
+  line-height: 18px;
+}
+
+.product__card .card-descr .goods__select {
+  width: 190px;
+  height: 31px;
+  background-color: #f4f4f4;
+}
+
+.product__card .card-descr .main-block__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.product__card .card-descr .main-block__form label {
+  width: 100px;
+  font-size: 12px;
+  line-height: 31px;
+  letter-spacing: -0.025em;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+.product__card .card-descr .main-block__select {
+  width: 100%;
+  background: url(../img/icons/select.jpg) right no-repeat;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
 .shop {
   display: none;
 }
@@ -3293,6 +3382,8 @@ html {
 .webp .products__contain .main-block__select { background: url(../img/icons/select.webp) right no-repeat; }
 
 .webp .products__contain .main-block__nav-arrow { background: url(../img/icons/prodNavArrow.webp) center no-repeat; }
+
+.webp .product__card .card-descr .main-block__select { background: url(../img/icons/select.webp) right no-repeat; }
 
 .webp .clearance__title { background-image: url(../img/layersnew.webp); }
 
