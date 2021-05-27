@@ -5,7 +5,6 @@
         margin-top: 25px
     &__control 
         height: 2.7em
-        padding: 0 30px
         font-size: 18px
         text-transform: uppercase
         letter-spacing: -0.005em
@@ -13,11 +12,30 @@
         line-height: 3
         color: #ffffff
         background-color: #f4845d
+        @media ( max-width: $md2+px )
+            background: url(../img/icons/tabArrowDown.svg) right 5% top 50% no-repeat
+            background-color: #f4845d
+        &-item
+            position: relative
+            & .dropdown__wrapper
+                z-index: 10000
+            & .dropdown
+                background: #f4845d !important
+                text-align: start 
+                &__link
+                    padding-left: 20px              
+            &:hover .dropdown
+                transform: translateY(10%)
+        &-link
+            font-size: 18px          
+            text-transform: uppercase
+            letter-spacing: -0.005em
+            color: #ffffff
+            padding-left: 20px
         @media ( max-width: $md3+px )
-            height: 3.2em
+            height: 3.2em            
             +adaptiv-font(30, 13, 0)
-        svg
-            fill: #c1c1c1
+    
     &__wrapper 
         background-color: $mainColor
         padding: 0 10px 30px 10px

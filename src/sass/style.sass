@@ -93,7 +93,7 @@ html
         margin-left: 5px
         margin-right: 5px
     @media ( max-width: $md3+px )
-        height: 500px
+        height: 415px
         width: 275px
         &:nth-child(3)            
             display: none
@@ -109,7 +109,7 @@ html
         margin-bottom: 6px
         cursor: pointer
         @media ( max-width: $md3+px )
-            height: 360px
+            // height: 360px
         .goods-img
             width: 100%
             img       
@@ -234,7 +234,7 @@ html
             text-transform: uppercase
             letter-spacing: -0.025em
             color: $mainColor
-.sub-menu__wrapper
+.dropdown__wrapper
     position: absolute
     overflow: hidden
     top: 15px      
@@ -244,39 +244,40 @@ html
     @media ( max-width: $md2+px )
         top: 25px
         width: 100%
-.dropdown
-    left: 0
-    transform: translateY(-110%)
-    transition: 0.5s all
-    background: rgba(255, 255, 255, 0.4)
-    margin-top: 5px
-    @media ( max-width: $md2+px )
-        background: none
-    li
-        margin-bottom: 5px
-        @media ( min-width: $md1+px )
-            &:hover
-                background-color: #ededed
-                transition: 0.5s all
-        // &:after
-        //     display: block
-        //     position: absolute
-        //     content: ""
-        //     left: 0
-        //     width: 0
-        //     height: 2px
-        //     background-color: $mainColor
-        //     transition: all 0.5s ease-out
-        //     &:hover:after, &:focus:after                    
-        //         width: 100%
-    &__link 
-        font-family: ArialMT
-        font-size: 16px
-        line-height: 1.2
-        font-weight: 400
-        letter-spacing: -0.005em
-        color: #000000
+    .dropdown
+        left: 0
+        transform: translateY(-110%)
+        transition: 0.5s all
+        background: rgba(255, 255, 255, 0.4)
+        margin-top: 5px
         @media ( max-width: $md2+px )
-            color: #ffffff
-
+            background: none
+        &__link
+            margin-bottom: 5px
+            font-family: ArialMT
+            font-size: 16px
+            font-weight: 400
+            letter-spacing: -0.005em
+            color: #000000
+            @media ( min-width: $md1+px )
+                &:hover
+                    background-color: #ededed
+                    transition: 0.5s all
+            @media ( max-width: $md2+px )
+                color: #ffffff
+//плавное поддчеркивание
+            // &:after
+            //     display: block
+            //     position: absolute
+            //     content: ""
+            //     left: 0
+            //     width: 0
+            //     height: 2px
+            //     background-color: $mainColor
+            //     transition: all 0.5s ease-out
+            //     &:hover:after, &:focus:after                    
+            //         width: 100%
+      
+    
+          
 

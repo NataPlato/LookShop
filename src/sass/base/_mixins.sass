@@ -13,7 +13,7 @@
         //Только если меньше контейнера
         font-size: $pcSize + px
         @media ( max-width: #{$maxWidthContainer + px}) 
-            font-size: calck(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
+            font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
             
     @else if ($maxSize==2) 
         //Только если больше контейнера
@@ -25,10 +25,7 @@
         //Всегда
         font-size: calc( #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthMedia - 320}))
 
-// =adaptiv-font($pcSize, $mobSize) 
-//     $addSize: $pcSize - $mobSize
-//     font-size: calc( #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}))
-         
+
 
 =subHeaderSize
     font-size: 11px    

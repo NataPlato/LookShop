@@ -2,6 +2,8 @@
     position: relative
     height: 480px
     overflow: hidden
+    @media ( max-width: $md3+px )
+        display: none
     &__wrapper 
         height: 440px
         display: flex    
@@ -59,7 +61,7 @@
         .goods-descr 
             color: #8f8f8f
             margin-bottom: 33px
-            width: 315px
+            max-width: 315px
         .card-button 
             width: 157px
             height: 47px
