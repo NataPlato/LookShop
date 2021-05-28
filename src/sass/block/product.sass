@@ -23,15 +23,24 @@
 
     .card-descr 
 
-        &__link-back 
+        &__link-back
+            padding: 13px 0 15px 15px
+            width: 100%
+            border-bottom: 1px solid #d6d6d6
+            span
+                color: #fd926d
 
-        .goods-name 
+        .goods-name
+            margin: 25px 0
             font-size: 24px
             letter-spacing: -0.025em
             color: #4a4a4a
 
-        .goods__wrapper 
-
+        .goods__wrapper
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 30px
         .goods-price 
             font-size: 36px
             font-weight: 700
@@ -45,14 +54,20 @@
         .goods-descr 
             color: #8f8f8f
             line-height: 18px
-        .goods__select 
+            margin-bottom: 25px
+        .goods__select
+            height: 50px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-bottom: 1px solid #d6d6d6
+            border-top: 1px solid #d6d6d6
+            margin-bottom: 30px
+        .main-block__form
+            display: flex
             width: 190px
             height: 31px
             background-color: #f4f4f4
-
-        .main-block__form 
-            display: flex
-            height: 100%
             label
                 width: 100px
                 font-size: 12px
@@ -62,6 +77,93 @@
                 text-align: center
         .main-block__select 
             width: 100%
-            background: url(../img/icons/select.jpg) right no-repeat
+            background: url(../../img/icons/select.jpg) right no-repeat
             background-color: #f4f4f4
             cursor: pointer
+        .select-color
+            display: flex
+            &__item
+                height: 31px
+                width: 30px
+                &:nth-child(1)
+                    background-color: #efebe2
+                &:nth-child(2)
+                    background-color: #c9c1c6
+                &:nth-child(3)
+                    background-color: #b29b88
+                &:nth-child(4)
+                    background-color: #968886
+                &:nth-child(5)
+                    background-color: #cde0ef
+        .button__group
+            display: flex
+
+        .goods__quantity
+            display: flex
+            margin-right: 5px
+            .plus-btn,
+            .minus-btn
+                position: relative
+                width: 47px
+                height: 47px
+                background-color: #fd926d
+                &::after
+                    content: "+"
+                    position: absolute
+                    bottom: 25%
+                    left: 50%
+                    transform: translateX(-50%)
+                    color: #ffffff
+
+            input
+                width: 47px
+                background-color: #feb298
+                font-size: 14px
+                letter-spacing: -0.025em
+                color: #ffffff
+                text-align: center
+            .minus-btn
+                &::after
+                    content: "-"
+                    bottom: 30%
+
+        .btn
+            width: 157px
+            height: 47px
+            box-shadow: none
+        .card-button
+            font-family: HelveticaNeueLTStdLt, serif
+            font-size: 14px
+            line-height: 30px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            .btn-icon
+                margin-left: 16px
+.product__share
+    display: flex
+    align-items: center
+    justify-content: space-around
+    height: 90px
+    border-bottom: 1px solid #d6d6d6
+    border-top: 1px solid #d6d6d6
+    &_block
+        display: flex
+        align-items: center
+        span
+            font-size: 11px
+            line-height: 1.2
+            text-transform: uppercase
+            letter-spacing: -0.025em
+            color: #4d4d4d
+    &_link
+        width: 49px
+        height: 49px
+        background-color: #ffffff
+        border: 2px solid #b8a9a4
+        border-radius: 50%
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        margin-right: 7px
+

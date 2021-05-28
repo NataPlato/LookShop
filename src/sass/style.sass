@@ -1,32 +1,32 @@
-
-@import "base/reset";
-@import "base/variables";
-@import "base/mixins";
+@import "base/reset"
+@import "base/variables"
+@import "base/mixins"
 @import "fonts"
 
 body
     font-family: ArialMT, sans-serif
-html 
-    box-sizing: border-box
-    
 
-@import "block/icons";
-@import "block/header";
-@import "block/subheader";
-@import "block/menu";
-@import "block/forms";
-@import "block/slider";
-@import "block/contacts";
-@import "block/sliderShop";
-@import "block/sliderProducts";
-@import "block/products";
-@import "block/product";
-@import "block/shop";
-@import "block/clearance";
-@import "block/collection";
-@import "block/favourite";
-@import "block/about";
-@import "block/footer";
+html
+    box-sizing: border-box
+
+
+@import "block/icons"
+@import "block/header"
+@import "block/subheader"
+@import "block/menu"
+@import "block/forms"
+@import "block/slider"
+@import "block/contacts"
+@import "block/sliderShop"
+@import "block/sliderProducts"
+@import "block/products"
+@import "block/product"
+@import "block/shop"
+@import "block/clearance"
+@import "block/collection"
+@import "block/favourite"
+@import "block/about"
+@import "block/footer"
 .wrapper
     width: 100%
     min-height: 100%
@@ -37,13 +37,13 @@ html
 ._container
     max-width: $maxWidthContainer+px
     margin: 0 auto
-    @media ( max-width: $md1+px )
+    @media (max-width: $md1+px)
         max-width: none
-    @media ( max-width: $md2+px )
+    @media (max-width: $md2+px)
         max-width: none
-    @media ( max-width: $md3+px )
+    @media (max-width: $md3+px)
         max-width: none
-    @media ( max-width: $md4+px )
+    @media (max-width: $md4+px)
         max-width: none
 
 .img-wrapper
@@ -51,17 +51,20 @@ html
     width: 100%
     height: 100%
     z-index: -1
+
 .block
     position: relative
     display: flex
     flex: 0 0 auto
     align-items: center
     justify-content: flex-end
-    overflow: hidden  
+    overflow: hidden
     transition: all 0.5s
+
     &:hover
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-        transition: all 0.5s       
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+        transition: all 0.5s
+
 .hidden
     overflow: hidden
     height: 0
@@ -73,35 +76,35 @@ html
     letter-spacing: -0.005em
     color: #6b6b6b
 
-.card 
+.card
     position: relative
     width: 220px
     height: 395px
     background-color: #f7f7f7
     margin-top: 100px
-    margin-right: 10px  
-    margin-left: 10px  
+    margin-right: 10px
+    margin-left: 10px
     transition: all 0.8s
     z-index: 100
-    @media ( min-width: 992px  )        
+    @media (min-width: 992px)
         &:hover
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
             transition: 0.8s all
-    @media ( max-width: $md1+px )
+    @media (max-width: $md1+px)
         &:last-child
             display: none
-    @media ( max-width: $md2+px )
+    @media (max-width: $md2+px)
         margin-left: 5px
         margin-right: 5px
-    @media ( max-width: $md3+px )
+    @media (max-width: $md3+px)
         height: 415px
         width: 275px
-        &:nth-child(3)            
+        &:nth-child(3)
             display: none
-    @media ( max-width: $md4+px )
+    @media (max-width: $md4+px)
         &:nth-child(2)
             display: none
-            
+
     &__img
         display: block
         height: 290px
@@ -109,28 +112,32 @@ html
         overflow: hidden
         margin-bottom: 6px
         cursor: pointer
-        @media ( max-width: $md3+px )
+        @media (max-width: $md3+px)
             // height: 360px
         .goods-img
             width: 100%
-            img       
+
+            img
                 height: 100%
                 width: 100%
                 display: block
-    &__info 
+
+    &__info
         text-align: center
         width: 100%
-        .goods-name 
+
+        .goods-name
             display: inline-block
             position: relative
             font-size: 12px
             line-height: 1.2
             font-weight: 400
-            text-transform: uppercase            
+            text-transform: uppercase
             letter-spacing: -0.01em
             color: #373737
             margin-bottom: 6px
             cursor: pointer
+
             &:after
                 display: block
                 position: absolute
@@ -140,12 +147,15 @@ html
                 background-color: $mainColor
                 content: ""
                 transition: width 0.5s ease-out
+
             &:hover:after,
-            &:focus:after                    
+            &:focus:after
                 width: 100%
-            @media ( max-width: $md3+px )
+
+            @media (max-width: $md3+px)
                 +adaptiv-font(18, 12, 0)
-        .goods-price 
+
+        .goods-price
             font-size: 23px
             line-height: 1.2
             font-weight: 400
@@ -153,40 +163,45 @@ html
             letter-spacing: -0.01em
             color: #373737
             margin-bottom: 6px
-            @media ( max-width: $md3+px )
+            @media (max-width: $md3+px)
                 +adaptiv-font(27.5, 22, 0)
-        .card-button 
-            margin: 0 auto
+
+        .card-button
             width: 120px
             height: 32px
             font-size: 14px
-            margin-bottom: 15px
-            @media ( max-width: $md3+px )
+            margin: 0 auto 15px
+            @media (max-width: $md3+px)
                 width: 9em
                 height: 2.7em
                 line-height: 30px
                 +adaptiv-font(16, 14, 0)
+
             .btn-icon
                 margin-left: 5px
-                @media ( max-width: $md3+px )
+                @media (max-width: $md3+px)
                     margin-left: 10px
+
     .sale
-        position: relative   
+        position: relative
+
         &__one
             position: absolute
             clip-path: polygon(100% 0, 0 100%, 0 0)
             background-color: #525252
             width: 50px
             height: 50px
+
         &__two
             position: absolute
             clip-path: polygon(100% 0, 0 100%, 100% 100%)
             background-color: #ffffff
             width: 50px
             height: 50px
+
         span
             padding-left: 5px
-            font-family: Helvetica
+            font-family: Helvetica, serif
             font-size: 10px
             line-height: 1.2
             font-weight: 400
@@ -202,69 +217,78 @@ html
     line-height: 32px
     text-transform: uppercase
     letter-spacing: -0.025em
-    color: #ffffff                
+    color: #ffffff
     span
         display: block
         height: 31px
         background-color: #000000
         padding: 0 10px
-.card-mini    
+
+.card-mini
     display: flex
     padding: 10px 0
     border-bottom: 1px solid #d6d6d6
-    .card__img 
+
+    .card__img
         height: 101px
         width: 120px
         margin-right: 10px
         margin-bottom: 0
+
         img
             height: 100%
             width: 100%
             object-fit: contain
-    .card__info 
+
+    .card__info
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: flex-end
-        .goods-name 
-            color: #5e5e5e                        
-        .goods-price 
+
+        .goods-name
+            color: #5e5e5e
+
+        .goods-price
             font-size: 16px
             line-height: 1.2
             font-weight: 700
             text-transform: uppercase
             letter-spacing: -0.025em
             color: $mainColor
+
 .dropdown__wrapper
     position: absolute
     overflow: hidden
-    top: 15px      
-    z-index: 100     
+    top: 15px
+    z-index: 100
     width: 120px
-    text-align: center 
-    @media ( max-width: $md2+px )
+    text-align: center
+    @media (max-width: $md2+px)
         top: 25px
         width: 100%
+
     .dropdown
         left: 0
         transform: translateY(-110%)
         transition: 0.5s all
         background: rgba(255, 255, 255, 0.4)
         margin-top: 5px
-        @media ( max-width: $md2+px )
+        @media (max-width: $md2+px)
             background: none
+
         &__link
             margin-bottom: 5px
-            font-family: ArialMT
+            font-family: ArialMT, serif
             font-size: 16px
             font-weight: 400
             letter-spacing: -0.005em
             color: #000000
-            @media ( min-width: $md1+px )
+            @media (min-width: $md1+px)
                 &:hover
                     background-color: #ededed
                     transition: 0.5s all
-            @media ( max-width: $md2+px )
+            @media (max-width: $md2+px)
                 color: #ffffff
 //плавное поддчеркивание
             // &:after
