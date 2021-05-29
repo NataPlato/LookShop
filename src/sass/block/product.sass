@@ -1,19 +1,23 @@
-.product__card 
+.product__card
     display: flex
-    .card-img 
-        margin-right: 29px      
+
+    .card-img
+        margin-right: 29px
         margin-bottom: 35px
-        &__main 
+
+        &__main
             width: 400px
             height: 500px
             margin-bottom: 15px
+
             img
                 width: 100%
                 height: 100%
                 display: block
                 object-fit: cover
                 object-position: top
-        &__mini 
+
+        &__mini
             display: flex
             justify-content: space-between
             img
@@ -21,12 +25,20 @@
                 height: 110px
                 display: block
 
-    .card-descr 
-
+    .card-descr
         &__link-back
+            position: relative
             padding: 13px 0 15px 15px
             width: 100%
             border-bottom: 1px solid #d6d6d6
+            &:before
+                content: "<"
+                position: absolute
+                opacity: 0.2
+                color: #000000
+                left: 0
+                font-weight: 900
+                font-size: 19px
             span
                 color: #fd926d
 
@@ -41,20 +53,22 @@
             justify-content: space-between
             align-items: center
             margin-bottom: 30px
-        .goods-price 
+
+        .goods-price
             font-size: 36px
             font-weight: 700
             letter-spacing: -0.025em
             color: $mainColor
 
-        .goods__reviews 
+        .goods__reviews
 
-        .goods__reviews_rating 
+        .goods__reviews_rating
 
-        .goods-descr 
+        .goods-descr
             color: #8f8f8f
             line-height: 18px
             margin-bottom: 25px
+
         .goods__select
             height: 50px
             display: flex
@@ -63,11 +77,13 @@
             border-bottom: 1px solid #d6d6d6
             border-top: 1px solid #d6d6d6
             margin-bottom: 30px
+
         .main-block__form
             display: flex
             width: 190px
             height: 31px
             background-color: #f4f4f4
+
             label
                 width: 100px
                 font-size: 12px
@@ -75,38 +91,49 @@
                 letter-spacing: -0.025em
                 color: #4d4d4d
                 text-align: center
-        .main-block__select 
+
+        .main-block__select
             width: 100%
             background: url(../../img/icons/select.jpg) right no-repeat
             background-color: #f4f4f4
             cursor: pointer
+
         .select-color
             display: flex
+
             &__item
                 height: 31px
                 width: 30px
+
                 &:nth-child(1)
                     background-color: #efebe2
+
                 &:nth-child(2)
                     background-color: #c9c1c6
+
                 &:nth-child(3)
                     background-color: #b29b88
+
                 &:nth-child(4)
                     background-color: #968886
+
                 &:nth-child(5)
                     background-color: #cde0ef
+
         .button__group
             display: flex
 
         .goods__quantity
             display: flex
             margin-right: 5px
+
             .plus-btn,
             .minus-btn
                 position: relative
                 width: 47px
                 height: 47px
                 background-color: #fd926d
+
                 &::after
                     content: "+"
                     position: absolute
@@ -122,6 +149,7 @@
                 letter-spacing: -0.025em
                 color: #ffffff
                 text-align: center
+
             .minus-btn
                 &::after
                     content: "-"
@@ -131,6 +159,7 @@
             width: 157px
             height: 47px
             box-shadow: none
+
         .card-button
             font-family: HelveticaNeueLTStdLt, serif
             font-size: 14px
@@ -138,8 +167,10 @@
             font-weight: 400
             text-transform: uppercase
             color: #ffffff
+
             .btn-icon
                 margin-left: 16px
+
 .product__share
     display: flex
     align-items: center
@@ -147,6 +178,7 @@
     height: 90px
     border-bottom: 1px solid #d6d6d6
     border-top: 1px solid #d6d6d6
+
     &_block
         display: flex
         align-items: center
@@ -166,4 +198,84 @@
         align-items: center
         justify-content: center
         margin-right: 7px
+
+.accordion
+    &__block
+        margin-top: 54px
+        margin-bottom: 45px
+        li:nth-child(1) span
+            background-color: #ffd5c6
+        li:nth-child(2) span
+            background-color: #ffcab8
+        li:nth-child(3) span
+            background-color: #ffae92
+        li:nth-child(4) span
+            background-color: #ffa687
+        li:nth-child(5) span
+            background-color: #fd926d
+        &_title
+            position: relative
+            display: inline-block
+            height: 61px
+            width: 100%
+            font-size: 14px
+            line-height: 58px
+            text-transform: uppercase
+            letter-spacing: -0.025em
+            color: #ffffff
+            outline: none
+            padding-left: 54px
+            cursor: pointer
+
+            &-active
+
+                & ~ .accordion__block_links
+                    max-height: 1000px
+
+            &:after
+                content: ""
+                position: absolute
+                top: 25%
+                left: 2%
+                width: 24px
+                height: 24px
+                background: url("../img/icons/accorarrow.png") 50% no-repeat #f2b9a4
+                border: 1px solid #ffffff
+
+        &_links
+            overflow: hidden
+            max-height: 0
+            transition: all 0.8s
+            &-active
+                max-height: 1000px
+            &-link
+                padding-left: 44px
+                font-size: 12px
+                line-height: 16px
+                text-transform: initial
+                color: #727272
+                margin-bottom: 15px
+
+.related-products
+    &__title
+        font-size: 15px
+        line-height: 1.2
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: -0.01em
+        color: #414141
+        text-align: center
+        span
+            background-color: #ffffff
+            padding: 0 8px
+    &__cards
+        display: flex
+        border-top: 1px solid rgba(178, 178, 178, 0.5)
+        margin-top: -11px
+        margin-bottom: 50px
+        .card
+            margin-top: 45px
+
+    .btn-loadmore.btn
+
 

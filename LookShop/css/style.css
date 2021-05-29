@@ -685,10 +685,8 @@ html {
 
 .subtitle {
   position: relative;
-  font-family: LuxuryRoyaleJF;
-  line-height: 1.2;
+  font-family: LuxuryRoyaleJF, serif;
   font-size: 36px;
-  font-weight: 400;
   color: #78645d;
   margin-top: 4%;
 }
@@ -715,7 +713,7 @@ html {
 
 .title {
   position: relative;
-  font-family: HelveticaNeueLTStdHvCn;
+  font-family: HelveticaNeueLTStdHvCn, serif;
   font-size: 96.1px;
   line-height: 72px;
   font-weight: 400;
@@ -741,7 +739,7 @@ html {
 
 .mainTitle {
   position: relative;
-  font-family: HelveticaNeueLTStdLtCn;
+  font-family: HelveticaNeueLTStdLtCn, serif;
   font-size: 36px;
   line-height: 1.2;
   font-weight: 400;
@@ -1387,7 +1385,6 @@ html {
 .products__contain .products__aside_block .categories__block_title {
   display: block;
   width: 100%;
-  font-family: ArialMT;
   line-height: 26px;
   color: #727272;
   border-bottom: 1px solid #d6d6d6;
@@ -1638,9 +1635,20 @@ html {
 }
 
 .product__card .card-descr__link-back {
+  position: relative;
   padding: 13px 0 15px 15px;
   width: 100%;
   border-bottom: 1px solid #d6d6d6;
+}
+
+.product__card .card-descr__link-back:before {
+  content: "<";
+  position: absolute;
+  opacity: 0.2;
+  color: #000000;
+  left: 0;
+  font-weight: 900;
+  font-size: 19px;
 }
 
 .product__card .card-descr__link-back span {
@@ -1866,6 +1874,110 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 7px;
+}
+
+.accordion__block {
+  margin-top: 54px;
+  margin-bottom: 45px;
+}
+
+.accordion__block li:nth-child(1) span {
+  background-color: #ffd5c6;
+}
+
+.accordion__block li:nth-child(2) span {
+  background-color: #ffcab8;
+}
+
+.accordion__block li:nth-child(3) span {
+  background-color: #ffae92;
+}
+
+.accordion__block li:nth-child(4) span {
+  background-color: #ffa687;
+}
+
+.accordion__block li:nth-child(5) span {
+  background-color: #fd926d;
+}
+
+.accordion__block_title {
+  position: relative;
+  display: inline-block;
+  height: 61px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 58px;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  outline: none;
+  padding-left: 54px;
+  cursor: pointer;
+}
+
+.accordion__block_title-active ~ .accordion__block_links {
+  max-height: 1000px;
+}
+
+.accordion__block_title:after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icons/accorarrow.png") 50% no-repeat #f2b9a4;
+  border: 1px solid #ffffff;
+}
+
+.accordion__block_links {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.accordion__block_links-active {
+  max-height: 1000px;
+}
+
+.accordion__block_links-link {
+  padding-left: 44px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: initial;
+  color: #727272;
+  margin-bottom: 15px;
+}
+
+.related-products__title {
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: #414141;
+  text-align: center;
+}
+
+.related-products__title span {
+  background-color: #ffffff;
+  padding: 0 8px;
+}
+
+.related-products__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid rgba(178, 178, 178, 0.5);
+  margin-top: -11px;
+  margin-bottom: 50px;
+}
+
+.related-products__cards .card {
+  margin-top: 45px;
 }
 
 .shop {
@@ -3565,6 +3677,8 @@ html {
 .webp .products__contain .main-block__nav-arrow { background: url(../img/icons/prodNavArrow.webp) center no-repeat; }
 
 .webp .product__card .card-descr .main-block__select { background: url(../../img/icons/select.webp) right no-repeat; }
+
+.webp .accordion__block_title:after { background: url(../img/icons/accorarrow.webp) 50% no-repeat #f2b9a4; }
 
 .webp .clearance__title { background-image: url(../img/layersnew.webp); }
 
